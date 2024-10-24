@@ -1,0 +1,583 @@
+{
+	"info": {
+		"_postman_id": "eabee51e-f3af-4981-b93a-b906b8258fae",
+		"name": "EmployeeManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38949283"
+	},
+	"item": [
+		{
+			"name": "departments",
+			"item": [
+				{
+					"name": "http://localhost:9090/api/department/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Operations\",\r\n    \"description\":\"Oversees daily business processes\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/api/department/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"department",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/department/changedept?id=6&name=CRM",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/department/changedept?id=6&name=CRM",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"department",
+								"changedept"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6"
+								},
+								{
+									"key": "name",
+									"value": "CRM"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/department/fetchdept?id=1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/department/fetchdept?id=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"department",
+								"fetchdept"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/department/delete?id=7",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/department/delete?id=8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"department",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/department/alldept",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/department/alldept",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"department",
+								"alldept"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "projects",
+			"item": [
+				{
+					"name": "http://localhost:9090/api/project/save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\": \"Sustainability Project\", \"description\": \"Adopting eco-friendly practices.\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/api/project/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"project",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/project/changename?id=9&name=Software",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/project/changename?id=10&name=SoftwareABC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"project",
+								"changename"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10"
+								},
+								{
+									"key": "name",
+									"value": "SoftwareABC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/project/fetchproject?id=5",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/project/fetchproject?id=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"project",
+								"fetchproject"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/project/allproject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/project/allproject",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"project",
+								"allproject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/project/delete?id=10",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/project/delete?id=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"project",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employees",
+			"item": [
+				{
+					"name": "http://localhost:9090/api/employee/addemployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"firstName\": \"Emily\",\r\n        \"lastName\": \"Johnson\",\r\n        \"email\": \"emily.johnson@example.com\",\r\n        \"departmentId\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/api/employee/addemployee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"addemployee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employee/changeemail?id=7&email=johndoe@example.com",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/employee/changeemail?id=7&email=johndoe@example.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"changeemail"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "7"
+								},
+								{
+									"key": "email",
+									"value": "johndoe@example.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employee/fetchemployeebyid?id=10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/employee/fetchemployeebyid?id=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"fetchemployeebyid"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employee/fetchall",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/employee/fetchall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"fetchall"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employee/pagination?page=1&size=10",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/employee/pagination?page=1&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"pagination"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employee/sort",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/employee/sort",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"sort"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employee/setdept?empId=19&deptId=6",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/employee/setdept?empId=19&deptId=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"setdept"
+							],
+							"query": [
+								{
+									"key": "empId",
+									"value": "19"
+								},
+								{
+									"key": "deptId",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employee/delete?id=20",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/employee/delete?id=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employee",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "employeeProject",
+			"item": [
+				{
+					"name": "http://localhost:9090/api/employeeproject/assignemployee/2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[7,8,10]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/api/employeeproject/assignemployee/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employeeproject",
+								"assignemployee",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:9090/api/employeeproject/assignproject/8",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[4,5,6]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/api/employeeproject/assignproject/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"employeeproject",
+								"assignproject",
+								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
